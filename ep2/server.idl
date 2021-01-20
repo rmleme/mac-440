@@ -1,0 +1,20 @@
+module Server {
+  interface TC {
+    
+    void f1();
+
+    long f2(in long a1);
+
+    long f3(in long a1, in long a2, in long a3, in long a4, in long a5);
+
+    typedef struct s1 {
+      long x, y, z;
+    } ts1;
+
+    ts1 f4(in ts1 a1, in ts1 a2, in ts1 a3, in ts1 a4, in ts1 a5);    
+
+    void f7(in string a1);
+
+  };
+  
+};

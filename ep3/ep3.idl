@@ -1,0 +1,14 @@
+// Autores: Glaucio de Siqueira Le                 Numero USP:
+//          Paulo Marcel Caldeira Yokosawa         Numero USP: 3095430
+//          Rodrigo Mendes Leme                    Numero USP: 3151151
+//          Rodrigo Simoes de Almeida              Numero USP:
+// Exercicio Programa 3                            Data: 1/07/2002
+// Descricao: interface remota para o servidor.
+
+module comp_idl
+{
+  interface Teste
+  {
+    string f1(in string a1);
+  };
+};

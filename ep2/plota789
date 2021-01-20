@@ -1,0 +1,12 @@
+set title "Experimento 7 8 e 9"
+set pointsize 1.5
+set xlabel 'Tamanho da String'
+set ylabel 'Tempo médio em micro-segundos'
+set grid ytics
+
+
+plot "exp7.dat" using 1:2  title 'Experimento 7' with linespoints, \
+	"exp8.dat" using 1:2  title 'Experimento 8' with linespoints, \
+	"exp9.dat" using 1:2  title 'Experimento 9' with linespoints
+
+pause -1

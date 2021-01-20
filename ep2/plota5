@@ -1,0 +1,7 @@
+set title "Grafico do experimento (5)"
+set xlabel "Quantidade de objetos"
+set ylabel "Percentual de utilização da memória"
+set grid ytics
+
+plot [0:2500] [0:5] 'exp5.dat' index 0:1 notitle with linespoints linetype 3
+pause -1

@@ -1,0 +1,10 @@
+set title "Grafico dos experimentos (1) a (4)"
+set xlabel "Experimento"
+set ylabel "Tempo em microssegundos x 10"
+set bar 2.0
+set boxwidth 0.5
+set grid ytics
+
+plot [0:5] [0:40] 'exp1-4.dat' index 0:1 notitle with boxes linetype 3, 'exp1-4.dat' using ($1):($2):($3) notitle with yerrorbars linetype 14
+
+pause -1

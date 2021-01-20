@@ -1,0 +1,27 @@
+// Autores: Paulo Marcel Caldeira Yokosawa         Numero USP: 3095430
+//          Rodrigo Mendes Leme                    Numero USP: 3151151
+// Curso: BCC                                      Data: 31/03/2002
+// Professor: Fabio Kon
+// Exercicio Programa 1
+// ORB usado: JacORB
+// Descricao:
+
+module comp_idl
+{
+  interface Mensagem
+  {
+    string getConteudo();
+    string getDestinatario();
+    string getRemetente();
+  };
+
+  interface Sessao
+  {
+    typedef sequence <string> ListaDeString;
+    ListaDeString getNomePartics();
+    boolean insere_partic(in string novo_nome);
+    void remove_partic(in string nome);
+    boolean manda_mensagem(in Mensagem mensagem);
+    Mensagem checa_mensagem(in string destinatario);
+  };
+};

@@ -1,0 +1,9 @@
+set title "Compactação de mensagens"
+set pointsize 1.5
+set xlabel 'Tamanho da mensagem'
+set ylabel 'Tempo de envio/recebimento (milisseg)'
+set grid ytics
+
+plot "saida.dat" using 1:2 title '' with linespoints
+
+pause -1
